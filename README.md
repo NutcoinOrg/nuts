@@ -1,6 +1,6 @@
 # Nuts NFTs Collections
 
-Website: [nuts.family](nuts.family)
+Website: [nuts.family](https://nuts.family)
 
 ## Nuts.sol
 
