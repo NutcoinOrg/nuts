@@ -1,4 +1,4 @@
-# Nuts Collections
+# Nuts NFTs Collections
 
 Website: [nuts.family](nuts.family)
 
