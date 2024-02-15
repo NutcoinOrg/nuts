@@ -14,6 +14,6 @@ This contract converts Nuts NFT ERC-721 standard to ERC-20 standard by locking N
 
 **Nuts (NUTS) <> Nuts404 (NUTS404)**
 
-Nuts404 is built on a generic abstract contract called **W404** based on OpenZeppelin libraries (ERC-20, ERC-721, DoubleEndedQueue) and inspired from Pandora "ERC"404 experimental format.
+Nuts404 is built on a generic simple abstract contract called **W404** based on OpenZeppelin libraries (ERC-20, ERC-721, DoubleEndedQueue) and inspired from Pandora "ERC"404 experimental format.
 
 **WARNING**: Current implementation of wrapping & unwrapping does not guarantee to get back to the same ERC-721 token(s) initially deposited. As unwrapping is implemented to withdraw the Nuts ERC-721 token(s) corresponding to the tokenId(s) stored on the back of the queue.
