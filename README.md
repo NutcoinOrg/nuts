@@ -34,7 +34,7 @@ approved: true
 )
 ```
 
-2. **Wrapping:** On [Nuts404 Contract](https://etherscan.io/token/0x25559f0abbaf2a928239d2f419181147cc2dad74#writeContract#F2), connect you wallet, call `deposit` method in order to wrap NUTS NFTs into ERC20 tokens and set the `tokenIds` you want to wrap:
+2. **Wrapping:** On [NUTS404 Contract](https://etherscan.io/token/0x25559f0abbaf2a928239d2f419181147cc2dad74#writeContract#F2), connect you wallet, call `deposit` method in order to wrap NUTS NFTs into ERC20 tokens and set the `tokenIds` you want to wrap:
 
 ```code
 deposit(
@@ -44,7 +44,7 @@ tokenIds: [0, 31, 15]    (in this example: NUTS #0, #31 and #15 that you own wil
 
 Click on `write` button to launch the call.
 
-3. **Unwrapping:**: [Nuts404 Contract](https://etherscan.io/token/0x25559f0abbaf2a928239d2f419181147cc2dad74#writeContract#F6), connect you wallet, call `withdraw` method in order to unwrap NUTS404 tokens into NUTS NFTs and set the integer `value` you want to unwrap:
+3. **Unwrapping:**: [NUTS404 Contract](https://etherscan.io/token/0x25559f0abbaf2a928239d2f419181147cc2dad74#writeContract#F6), connect you wallet, call `withdraw` method in order to unwrap NUTS404 tokens into NUTS NFTs and set the integer `value` you want to unwrap:
 
 ```code
 withdraw(
