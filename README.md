@@ -25,7 +25,7 @@ Nuts404 is built on a generic simple abstract contract called **W404** based on 
 There are several ways to (un)wrap your NUTS with this contract (using web3/ethers scripts, etc). The following instructions represent just an example using Etherscan as a Web3 provider to interact with Nuts404.sol smart contract:
 
 
-1. On [NUTS Contract](https://etherscan.io/address/0x88266f9eb705f5282a2507a9c418821a2ac9f8bd#writeContract#F5), connect you wallet, call `setApprovalForAll` method allowing transfering NUTS for the Nuts404 Wrapper Contract (/!\ it will be for all your current and future NUTS as long as the value is set to `true`):
+1. **Approval:** On [NUTS Contract](https://etherscan.io/address/0x88266f9eb705f5282a2507a9c418821a2ac9f8bd#writeContract#F5), connect you wallet, call `setApprovalForAll` method allowing transfering NUTS for the Nuts404 Wrapper Contract (/!\ it will be for all your current and future NUTS as long as the value is set to `true`):
 
 ```code
 setApprovalForAll(
