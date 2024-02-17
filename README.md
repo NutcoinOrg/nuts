@@ -17,3 +17,37 @@ This contract converts Nuts NFT ERC-721 standard to ERC-20 standard by locking N
 Nuts404 is built on a generic simple abstract contract called **W404** based on OpenZeppelin libraries (ERC-20, ERC-721, DoubleEndedQueue) and inspired from Pandora "ERC"404 experimental format.
 
 **WARNING**: Current implementation of wrapping & unwrapping does not guarantee to get back to the same ERC-721 token(s) initially deposited. As unwrapping is implemented to withdraw the Nuts ERC-721 token(s) corresponding to the tokenId(s) stored on the back of the queue.
+
+### Usage
+
+**WARNING: No friendly GUI available yet to (un)wrap your NUTS NFTs. The following instructions are unsafe as they do not perform safety checks on the inputs you will provide to the Smart Contract and might cause a loss of assets. Recommended for advanced devs knowing what they are doing.**
+
+There are several ways to make deposits to this contract (web3, ethers scripts, etc). The following instructions represent just an example using Etherscan as a Web3 provider to interact with Nuts404.sol smart contract:
+
+1. On [NUTS Contract](https://etherscan.io/address/0x88266f9eb705f5282a2507a9c418821a2ac9f8bd#writeContract#F5), call `setApprovalForAll` method allowing transfering NUTS for the Nuts404 Wrapper Contract (/!\ it will be for all your current and future NUTS as long as the value is set to `true`):
+
+```code
+setApprovalForAll(
+operator: 0x25559f0abbaf2a928239d2f419181147cc2dad74     (Nuts404 Wrapper Contract)
+approved: true
+)
+```
+
+2. **Wrapping:** On [Nuts404 Contract](https://etherscan.io/token/0x25559f0abbaf2a928239d2f419181147cc2dad74#writeContract#F2), call `deposit` method in order to wrap NUTS NFTs into ERC20 tokens and set the `tokenIds` you want to wrap:
+
+```code
+deposit(
+tokenIds: [0, 31, 15]    (in this example: NUTS #0, #31 and #15 that you own will be wrapped into ERC20 tokens called Nuts404)
+)
+```
+
+3. **Unwrapping:**: [Nuts404 Contract](https://etherscan.io/token/0x25559f0abbaf2a928239d2f419181147cc2dad74#writeContract#F6), call `withdraw` method in order to unwrap NUTS404 tokens into NUTS NFTs and set the integer `value` you want to unwrap:
+
+```code
+withdraw(
+value: 3    (it will give you 3 NUTS NFTs but as said previously, it **does NOT guarantee** that it will be the #0, #31, #15 deposited previously)
+)
+```
+
+
+**WARNING: It is not recommended to (un)wrap more than 100 NUTS NFTS in order not to get running out of gas errors.**
