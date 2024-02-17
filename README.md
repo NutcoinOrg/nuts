@@ -48,7 +48,7 @@ Click on `write` button to launch the call.
 
 ```code
 withdraw(
-value: 3    (it will give you 3 NUTS NFTs but as said previously, it **does NOT guarantee** that it will be the #0, #31, #15 deposited previously)
+value: 3    (it will give you 3 NUTS NFTs but as said previously, it does NOT guarantee that it will be the #0, #31, #15 deposited previously)
 )
 ```
 
