@@ -6,6 +6,8 @@ Website: [nuts.family](https://nuts.family)
 
 ERC-721 Non Fungible Token (NFT) contract deployed with OpenZeppelin and Remix on Ethereum: [0x88266f9eb705F5282a2507A9c418821a2AC9f8BD](https://etherscan.io/token/0x88266f9eb705F5282a2507A9c418821a2AC9f8BD)
 
+**EDIT: You can use our friendly GUI to burn your NUT for minting NUTS NFTs, now available here: [nuts.family/en/#mint](https://nuts.family/en/#mint) or here: [app-nuts-family.netlify.app/#/mint](https://app-nuts-family.netlify.app/#/mint)**
+
 ## Nuts404.sol
 
 Contract deployed with OpenZeppelin and Remix on Ethereum: [0x25559f0abbaf2a928239d2f419181147cc2dad74](https://etherscan.io/address/0x25559f0abbaf2a928239d2f419181147cc2dad74)
@@ -20,7 +22,9 @@ Nuts404 is built on a generic simple abstract contract called **W404** based on 
 
 ### Usage
 
-**WARNING: No friendly GUI available yet to (un)wrap your NUTS NFTs. The following instructions are unsafe as they do not perform safety checks on the inputs you will provide to the Smart Contract and might cause a loss of assets. Recommended for advanced devs knowing what they are doing.**
+**EDIT: You can use our friendly GUI to (un)wrap your NUTS NFTs, now available here: [nuts.family/en/#wrap](https://nuts.family/en/#wrap) or here: [app-nuts-family.netlify.app/#/wrap](https://app-nuts-family.netlify.app/#/wrap)**
+
+**WARNING: The following manual instructions are unsafe as they do not perform safety checks on the inputs you will provide to the Smart Contract and might cause a loss of assets. Recommended for advanced devs knowing what they are doing. (If you're a beginner, please use the GUI link provided above)**
 
 There are several ways to (un)wrap your NUTS with this contract (using web3/ethers scripts, etc). The following instructions represent just an example using Etherscan as a Web3 provider to interact with Nuts404.sol smart contract:
 
@@ -48,7 +52,7 @@ Click on `write` button to launch the call.
 
 ```code
 withdraw(
-value: 3    (it will give you 3 NUTS NFTs but as said previously, it does NOT guarantee that it will be the #0, #31, #15 deposited previously)
+value: 3000000000000000000    (it will give you 3 NUTS NFTs but as said previously, it does NOT guarantee that it will be the #0, #31, #15 deposited previously)
 )
 ```
 
